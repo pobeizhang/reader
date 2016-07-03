@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/read.css"/>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<title>阅读器</title>
+</head>
+<body>
+	<div id="root" class="container">
+		<div class="m-article-action">
+			<div class="article-action-mid" id="action_mid"></div>
+		</div>
+		<!--顶部返回-->
+		<div id="top-nav" class="top-nav" style="display: none;">
+			<div class="icon-back">
+				
+			</div>
+			<div class="nav-title">
+				返回书架
+			</div>
+		</div>
+		<div id="fiction_chapter_title"></div>
+		<div id="fiction_container" class="m-read-content">
+			<h4>小说标题</h4>
+			<p>
+				人世间大多的秘密都藏在梦里，就像无法掌控自己的命运，活着却如同没有名字的存在。《解密》是一个天才与另一个天才之间的博弈，是将心灵粉碎再重铸。一个身世多舛的数学天才荣金珍，一个类似数学家约翰?纳什般的天才人物，因为非凡的才华被招募至国家秘密单位701，破解一部极其困难的敌国密码“紫密”。在巨大的期待和精神危机之下，总是醉心于和疯子下棋和梦境的容金珍，是否能够破解“紫密”，成为国家的英雄？在巨大的国家机器中，个人命运沉沉浮浮。若干年后，每个人都只剩下一个关于他们的传说，而谁也无法预测命运的轨迹
+			</p>
+			<p>
+				人世间大多的秘密都藏在梦里，就像无法掌控自己的命运，活着却如同没有名字的存在。《解密》是一个天才与另一个天才之间的博弈，是将心灵粉碎再重铸。一个身世多舛的数学天才荣金珍，一个类似数学家约翰?纳什般的天才人物，因为非凡的才华被招募至国家秘密单位701，破解一部极其困难的敌国密码“紫密”。在巨大的期待和精神危机之下，总是醉心于和疯子下棋和梦境的容金珍，是否能够破解“紫密”，成为国家的英雄？在巨大的国家机器中，个人命运沉沉浮浮。若干年后，每个人都只剩下一个关于他们的传说，而谁也无法预测命运的轨迹
+			</p>
+			<p>
+				人世间大多的秘密都藏在梦里，就像无法掌控自己的命运，活着却如同没有名字的存在。《解密》是一个天才与另一个天才之间的博弈，是将心灵粉碎再重铸。一个身世多舛的数学天才荣金珍，一个类似数学家约翰?纳什般的天才人物，因为非凡的才华被招募至国家秘密单位701，破解一部极其困难的敌国密码“紫密”。在巨大的期待和精神危机之下，总是醉心于和疯子下棋和梦境的容金珍，是否能够破解“紫密”，成为国家的英雄？在巨大的国家机器中，个人命运沉沉浮浮。若干年后，每个人都只剩下一个关于他们的传说，而谁也无法预测命运的轨迹
+			</p>
+		</div>
+		<div class="m-button-bar">
+			<ul class="u-tab">
+				<li id="prev_button">上一章</li>
+				<li id="next_button">下一章</li>
+			</ul>
+		</div>
+		<!-- 字体设置模块 -->
+		<div class="bk-nav-pannel font-container" style="display: none;"></div>
+		<div class="nav-pannel font-container" id="font-container" style="display: none;">
+			<!-- 调节字体大小 -->
+			<div class="child-mod">
+				<span>字号</span>
+				<button class="font-size-button" id="large-font">大</button>
+				<button class="font-size-button" id="small-font">小</button>
+			</div>
+			<!-- 阅读页面的背景设置 -->
+			<div class="child-mod">
+				<span>背景</span>
+				<div class="bk-container bk-container-1">
+					<div class="bk-container-current"></div>
+				</div>
+				<div class="bk-container bk-container-2">
+					<div class=""></div>
+				</div>
+				<div class="bk-container bk-container-3">
+					<div class=""></div>
+				</div>
+				<div class="bk-container bk-container-4">
+					<div class=""></div>
+				</div>
+				<div class="bk-container bk-container-5">
+					<div class=""></div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--底边栏背景颜色div-->
+		<div class="bk-bottom-nav bottom_nav" style="display: none;"></div>
+		<div id="bottom-nav" class="bottom-nav bottom_nav" style="display: none;">
+			<ul>
+				<li>
+					<div class="bottom-nav-item">
+						<i class="icon iconfont">&#xe619;</i>
+						<br>
+						<span>目录</span>
+					</div>
+				</li>
+				<li>
+					<div class="bottom-nav-item" id="font-button">
+						<i class="icon iconfont">&#xe6c5;</i>
+						<br>
+						<span>文字</span>
+					</div>
+				</li>
+				<li>
+					<div class="bottom-nav-item" id="night-button">
+						<i class="icon iconfont">&#xe72a;</i>
+						<br>
+						<span>夜间</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="lib/zepto.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery=$;
+	</script>
+	<script src="js/jquery.base64.js"></script>
+	<script src="js/jquery.jsonp.js"></script>
+	<script src="js/read.js"></script>
+
+</body>
+</html>
